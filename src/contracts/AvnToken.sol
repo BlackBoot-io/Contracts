@@ -38,9 +38,9 @@ abstract contract ERC20Interface {
     );
 }
 
-contract BBO_Token is ERC20Interface {
-    string public constant name = "BlackBoot Coin";
-    string public constant symbol = "BBO";
+contract AvnToken is ERC20Interface {
+    string public constant name = "Avanod";
+    string public constant symbol = "Avn";
     uint8 public constant decimals = 18;
 
     //mapping is a key-value data structure
@@ -48,16 +48,16 @@ contract BBO_Token is ERC20Interface {
     mapping(address => mapping(address => uint256)) allowed;
 
     //This stores the number of tokens that are available in our contract.
-    uint256 totalSupply_;
+    uint256 _totalSupply;
 
     //This method called when this contract deployed to network
     constructor(uint256 total) {
-        totalSupply_ = total;
-        balances[msg.sender] = totalSupply_;
+        _totalSupply = total;
+        balances[msg.sender] = _totalSupply;
     }
 
     function totalSupply() public view override returns (uint256) {
-        return totalSupply_;
+        return _totalSupply;
     }
 
     //Get the balance of an owner

@@ -22,23 +22,6 @@ abstract contract ProofOfEvent is ERC721URIStorage {
     // Event Id for each token, this is a dictionary to hold (TokenId,EventId)
     mapping(uint256 => uint256) private _tokenPerEvent;
 
-    // /**
-    //  * Solidity ensures that a constructor is called only once in the lifetime of a contract,
-    //  * a regular function can be called many times.
-    //  * To prevent a contract from being initialized multiple times,
-    //  * you need to add a check to ensure the initialize function is called only once
-    //  */
-    // function initialize(
-    //     string memory __name,
-    //     string memory __symbol,
-    //     string memory __baseURI
-    // ) public initializer {
-    //     ERC721.initialize();
-    //     _name = __name;
-    //     _symbol = __symbol;
-    //     _baseURI = __baseURI;
-    // }
-
     /**
      * @dev Gets the event Id
      * @param tokenId representing the token Id

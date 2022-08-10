@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-abstract contract ProofOfEvent is ERC721URIStorage {
+contract ProofOfEvent is ERC721URIStorage {
     event EventToken(uint256 eventId, uint256 tokenId);
     using Counters for Counters.Counter;
 
@@ -15,6 +15,8 @@ abstract contract ProofOfEvent is ERC721URIStorage {
 
     // Event Id for each token, this is a dictionary to hold (TokenId,EventId)
     mapping(uint256 => uint256) private _tokenPerEvent;
+
+    constructor() ERC721("AvanodProofOfEvent", "AVNProof") {}
 
     /**
      * @dev Gets the event Id

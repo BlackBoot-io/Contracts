@@ -10,12 +10,6 @@ abstract contract ProofOfEvent is ERC721URIStorage {
     event EventToken(uint256 eventId, uint256 tokenId);
     using Counters for Counters.Counter;
 
-    // Token name
-    string private _name;
-
-    // Token symbol
-    string private _symbol;
-
     // Last Used id (used to generate new ids)
     Counters.Counter private _lastTokenId;
 

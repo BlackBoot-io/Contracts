@@ -3,7 +3,7 @@
 Install dependencies:
     
     nvm use # Should install node 10.16.0
-    npm install -g ganache-cli
+    npm install truffle
     npm install
 
 
@@ -11,7 +11,7 @@ Install dependencies:
 
 To run a console:
 
-    npx truffle console --network local
+    npx truffle deploy --network goerli
 
 To run tests:
 

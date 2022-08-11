@@ -53,4 +53,7 @@ To create an instance we do:
 
     npz zos create MyContract --init initialize --args 42,hitchhiker
 
- 
+### Contract addresses ###
+#### Testnet ####
+* Goerli: [0x63626Bec98043FCf1410083a590ac272a1C35d48](https://goerli.etherscan.io/address/0x63626bec98043fcf1410083a590ac272a1c35d48/transactions)
+

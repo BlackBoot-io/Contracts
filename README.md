@@ -9,7 +9,15 @@ Install dependencies:
 
 ### Truffle Commands
 
+To compile contracts:
+
+    truffle compile
+
 To run a console:
+
+    npx truffle console --network local
+    
+To deploy on goerli:
 
     npx truffle deploy --network goerli
 

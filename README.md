@@ -3,15 +3,23 @@
 Install dependencies:
     
     nvm use # Should install node 10.16.0
-    npm install -g ganache-cli
+    npm install truffle
     npm install
 
 
 ### Truffle Commands
 
+To compile contracts:
+
+    truffle compile
+
 To run a console:
 
     npx truffle console --network local
+    
+To deploy on goerli:
+
+    npx truffle deploy --network goerli
 
 To run tests:
 
@@ -53,4 +61,7 @@ To create an instance we do:
 
     npz zos create MyContract --init initialize --args 42,hitchhiker
 
- 
+### Contract addresses ###
+#### Testnet ####
+* Goerli: [0x63626Bec98043FCf1410083a590ac272a1C35d48](https://goerli.etherscan.io/address/0x63626bec98043fcf1410083a590ac272a1c35d48/transactions)
+
